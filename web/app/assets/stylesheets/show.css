@@ -1,0 +1,66 @@
+#property {
+	width: 80%;
+	padding: 5%;
+	padding-top: 80px;
+	box-shadow: 0 5px 15px black;
+	margin: 0 auto;
+	background-color: grey;
+}
+
+#property a {
+	color: #2A5F7F;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    margin: auto;
+}
+
+#property-info {
+	margin-top: 3%;
+}
+
+#property-info ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#property-info p {
+	margin-top: 3%;
+}
+
+#myCarousel {
+}
+
+#myCarousel img {
+	height: 400px;
+}
+
+#lease-info ul.lease-ul {
+	padding-left: 5px;
+	list-style: none; 
+}
+
+#lease-info li {
+	padding-top: 1.5%;
+}
+
+#brokers-info {
+	text-align: center;
+}
+
+#brokers-info img {
+	width: 100px;
+	height: 100px;
+	border-radius: 0 20px;
+}
+
+#brokers-info ul {
+	list-style: none;
+	padding-left: 0;
+}
+
+#brokers-info li.broker {
+	display: inline-block;
+	padding: 5%;
+}

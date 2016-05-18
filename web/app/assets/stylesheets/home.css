@@ -1,0 +1,54 @@
+#properties, #queries {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.prop-list {
+	list-style: none;
+	margin: 0 auto;
+	width: 60%;
+	min-width: 625px;
+}
+
+.prop-list li:first-child {
+	border-radius: 5px 5px 0 0;
+}
+
+.prop-list li:last-child {
+	border-radius: 0 0 5px 5px;
+}
+
+.prop-list-prop {
+	background-color: #BEBABF;
+	padding: 5%;
+	box-shadow: 0 5px 15px black;
+	background: radial-gradient(white, black);
+}
+
+.prop-list-p {
+	height: 35%;
+	width: 37.5%;
+	border-radius: 10px;
+}
+
+.prop-list-p img {
+	height: 35%;
+	width: 37.5%;
+	border-radius: 10px;
+	border: 1px solid black; 
+}
+
+.prop-list-info {
+	display: inline-block;
+	width: 48%;
+	position: absolute;
+	margin-top: 2%;
+}
+
+.prop-list-info li {
+	padding-bottom: 5%;
+}
+
+.prop-list-info li:last-child {
+	padding-bottom: 0;
+}

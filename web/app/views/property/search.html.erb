@@ -1,0 +1,18 @@
+<div id="queries">
+    <ul class="prop-list">
+        <% @properties.each do |property| %>
+        <li class="prop-list-prop">
+            <a class="prop-list-p" href="property/<%= property['id'] %>"><img src="<%= property['photos'][0]['url'] %>"/></a>
+            <ul class="prop-list-info">
+               <% if property['name'] != '' %>
+               <li><%= property['name'] %></li>
+               <% end %>
+               <li><p><%= property['address'] %>, <%= property['city'] %>, <%= property['state'] %> <%= property['zip'] %></p></li>
+               <% if property['sale_price_dollars'] %>
+               <li><strong>Listing Price:</strong> $<%= property['sale_price_dollars'] %></li>
+               <% end %>
+           </ul>
+       </li>
+       <% end %>
+   </ul>
+</div>

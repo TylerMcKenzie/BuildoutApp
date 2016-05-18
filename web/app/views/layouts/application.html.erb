@@ -5,10 +5,22 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
-<body>
-
-<%= yield %>
+<body id="body">
+<nav id="nav">
+	<ul>
+		<li><a class="nav-li" href="/">Home</a></li>
+		<li><a class="nav-li" id="search-a" href="#">Search</a></li>
+	</ul>
+	<div id="searchBar"><form method="get" action="/search"><input id="search-input" type="text" name="query"> </form><button id="close" class=" glyphicon glyphicon-menu-left"></button></div>
+</nav>
+<div >
+	<%= yield %>
+</div>
 
 </body>
 </html>
